@@ -5,3 +5,4 @@ def solution(num, n):
     else:
         answer = 0
     return answer
+    
