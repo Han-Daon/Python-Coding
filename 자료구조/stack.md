@@ -1,11 +1,11 @@
 Stack = LIFO
 ============
-- push(e)
-- pop()
-- isEmpty()
-- isFull()
-- peek()
-- size()
+- push(e) => append(e)
+- pop() => pop()
+- isEmpty() => len(L) ==0
+- isFull() => false
+- peek() => L(len(L)-1)
+- size() => len(L)
 
 ------
 
