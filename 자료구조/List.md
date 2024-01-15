@@ -12,21 +12,21 @@ List
 ------
 
 ### 단순연결 리스트 : LinkedList
+#### 노트 클래스 구현
 ```python
 class Node : 
     def __init__(self, elem, link = None):
         self.data = elem #데이ㅓ 생성및초기화
         self.link = link #링크 생성 및 초기화
-```
------
-### LinkedList의 연산
-```python
+    
 #새로운 노드를 뒤에 추가하는 append 연산        
+
     def append (self, node) :
         if node if not None :
             node.link = self.link
             self.link = node    
- # 다음 노드를 연결 구조에서 꺼내는 Node 클래스의 popNext연산 
+
+# 다음 노드를 연결 구조에서 꺼내는 Node 클래스의 popNext연산 
   
     def popNext (self):
         next = self.link
@@ -34,13 +34,13 @@ class Node :
             self.link = next.link
         return next #다음 노드로 반환
 ```
+### 리스트 클래스 구현
 ```python
-# 단순연결 리스트 클래스 정의와 생성자
+
 class LinkedList:
     def __init__(self):
         self.head = None
-            
-            
+                        
 #연산 포화 공백 상태 검사
     def isEmpty(self):
         return self.head == None
